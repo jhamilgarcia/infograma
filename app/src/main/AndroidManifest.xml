@@ -13,7 +13,9 @@
         android:theme="@style/Theme.Infogram">
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
