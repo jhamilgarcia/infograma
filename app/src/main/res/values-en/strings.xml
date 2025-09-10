@@ -3,4 +3,5 @@
     <string name="app_name">infogram</string>
     <string name="nombre_de_usuario">user name</string>
     <string name="contrase_a">password</string>
+    <string name="button_text">LOGIN</string>
 </resources>

@@ -1,18 +1,38 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Infogram" parent="Theme.Material3.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
 
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorSecondary">@color/colorAccent</item> <!-- esto reemplaza el colorAccent -->
+        <item name="colorSecondary">@color/colorAccent</item>
 
 
-        <item name="textInputStyle">@style/Widget.Infogram.TextInputLayout</item>
+
+
     </style>
 
     <!-- se tuvo que hacer este paso porque desaparece el hint al precionarlo en mi editext ,porque agarra del color primario-->
-    <style name="Widget.Infogram.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
-        <item name="boxStrokeColor">@color/colorAccent</item>
-        <item name="hintTextColor">@color/colorAccent</item> <!-- si quieres que el hint también sea accent al enfocarse -->
+    <style name="editTextWhite" parent="Theme.Material3.Light">
+        <item name="android:textSize">@dimen/editText_textSize</item>
+        <item name="android:textColorHint">@color/editText_textColorHint</item>
+        <item name="android:textColorPrimary">@color/editText_textColorPrimary</item>
+        <item name="colorControlNormal">@color/editText_colorControlNormal</item>
+        <item name="colorControlActivated">@color/editText_colorControlActivated</item>
     </style>
+
+    <style name="Widget.Infogram.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <!-- Borde normal -->
+        <item name="boxStrokeColor">@color/white</item>
+
+        <!-- Color del hint cuando está enfocado -->
+        <item name="hintTextColor">@color/white</item>
+
+        <!-- Texto dentro del EditText -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+
+        <!-- Línea inferior (cuando no usas outlinedBox) -->
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
 </resources>
