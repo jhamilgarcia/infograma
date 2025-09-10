@@ -1,6 +1,7 @@
 package com.example.infogram;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,5 +16,9 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+    }
+
+    public void goCreateAcoont(View view){
+        System.out.println("---------------------------go to create acoont ------------");
     }
 }

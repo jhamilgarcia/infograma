@@ -8,6 +8,7 @@
     android:background="@color/colorPrimary"
     android:orientation="vertical"
     tools:context=".LoginActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,66 +17,99 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:layout_weight="0.6">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="30dp"
+                android:layout_height="@dimen/imageView_layoutHeight"
+
                 android:src="@drawable/infogram"/>
         </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="0.4"
-            android:layout_marginLeft="@dimen/login_horizontalMargin"
-            android:layout_marginRight="@dimen/login_horizontalMargin"
-            >
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:fillViewport="true"
+           android:layout_weight="0.4">
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.Infogram.TextInputLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:theme="@style/editTextWhite"
-                >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Usuario"/>
+               android:layout_marginLeft="@dimen/login_horizontalMargin"
+               android:layout_marginRight="@dimen/login_horizontalMargin"
+               >
 
-            </com.google.android.material.textfield.TextInputLayout>
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.Infogram.TextInputLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:theme="@style/editTextWhite"
+                   >
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.Infogram.TextInputLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:theme="@style/editTextWhite"
-                android:layout_marginRight="@dimen/login_marginTop"
-                >
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="Usuario"/>
 
-                <EditText
+               </com.google.android.material.textfield.TextInputLayout>
 
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="@string/contrase_a"
-                    android:inputType="textPassword" />
+               <com.google.android.material.textfield.TextInputLayout
+                   style="@style/Widget.Infogram.TextInputLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15dp"
+                   android:theme="@style/editTextWhite"
+                   android:layout_marginRight="@dimen/login_marginTop"
+                   >
 
-            </com.google.android.material.textfield.TextInputLayout>
+                   <EditText
 
-            <Button
-                style="@style/RaseButtonDark"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/button_text"
-                android:layout_marginTop="@dimen/login_marginTop"
-                android:theme="@style/RaseButtonDark"
-                />
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:hint="@string/contrase_a"
+                       android:inputType="textPassword" />
 
-        </LinearLayout>
+               </com.google.android.material.textfield.TextInputLayout>
+
+               <Button
+                   style="@style/RaseButtonDark"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/button_text"
+                   android:layout_marginTop="@dimen/login_marginTop"
+                   android:theme="@style/RaseButtonDark"
+                   />
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+
+                   android:gravity="center">
+                   <TextView
+                       android:id="@+id/no_tienes_cuenta"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/no_tienes_cuenta"
+                       android:textSize="@dimen/textView_textSize"
+                       android:textColor="@color/textView_textColor"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/crea_una_aqui"
+                       android:textStyle="bold"
+                       android:textColor="@color/textView_textColor"
+                       android:textSize="@dimen/textView_textSize"
+                       android:layout_toRightOf="@+id/no_tienes_cuenta"
+                       android:onClick="goCreateAcoont"/>
+               </RelativeLayout>
+
+           </LinearLayout>
+
+       </ScrollView>
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
