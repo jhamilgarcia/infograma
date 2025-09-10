@@ -39,7 +39,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:hint="nombre de usuario"
+                    android:hint="@string/nombre_de_usuario"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -55,7 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:hint="contraseña"
+                    android:hint="@string/contrase_a"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
