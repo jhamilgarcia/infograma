@@ -45,8 +45,7 @@
                    style="@style/Widget.Infogram.TextInputLayout"
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:theme="@style/editTextWhite"
-                   >
+                   android:theme="@style/editTextWhite">
 
                    <EditText
                        android:layout_width="match_parent"
@@ -94,14 +93,14 @@
                        android:layout_height="wrap_content"
                        android:text="@string/no_tienes_cuenta"
                        android:textSize="@dimen/textView_textSize"
-                       android:textColor="@color/textView_textColor"/>
+                       android:textColor="@color/white"/>
 
                    <TextView
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
                        android:text="@string/crea_una_aqui"
                        android:textStyle="bold"
-                       android:textColor="@color/textView_textColor"
+                       android:textColor="@color/white"
                        android:textSize="@dimen/textView_textSize"
                        android:layout_toRightOf="@+id/no_tienes_cuenta"
                        android:onClick="goCreateAcoont"/>
