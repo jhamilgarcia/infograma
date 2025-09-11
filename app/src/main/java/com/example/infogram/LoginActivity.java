@@ -1,5 +1,6 @@
 package com.example.infogram;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -19,6 +20,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void goCreateAcoont(View view){
-        System.out.println("---------------------------go to create acoont ------------");
+        startActivity(new Intent(this,createAccountActivity.class));
     }
 }
