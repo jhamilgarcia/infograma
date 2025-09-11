@@ -4,11 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.infogram.view.containeActivity;
+import com.example.infogram.view.createAccountActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -20,6 +19,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void goCreateAcoont(View view){
-        startActivity(new Intent(this,createAccountActivity.class));
+        startActivity(new Intent(this, createAccountActivity.class));
+    }
+
+    public void login(View view) {
+        startActivity(new Intent(this, containeActivity.class));
     }
 }

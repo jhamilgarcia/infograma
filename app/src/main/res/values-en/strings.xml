@@ -16,4 +16,6 @@
     <string name="title_crear_cuenta">crear cuenta</string>
     <string name="hace">Hace</string>
     <string name="like">10 me gusta</string>
+    <string name="home_item">Home</string>
+    <string name="yo_item">Yo</string>
 </resources>

@@ -6,6 +6,7 @@
     <color name="colorPrimary">#2196F3</color>
     <color name="colorPrimaryDark">#1976D2</color>
     <color name="colorAccent">#ff4081</color>
+    <color name="colorAccentSecondary">#AFFF4081</color>
     <color name="background_cardview">#33000000</color>
 
 

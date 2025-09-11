@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity
+            android:name=".view.containeActivity"
+            android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -22,10 +24,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!--no me da el toolbar ni modificando en el manifest-->
+        </activity> <!-- no me da el toolbar ni modificando en el manifest -->
         <activity
-            android:name=".createAccountActivity"
+            android:name=".view.createAccountActivity"
             android:exported="false"
             android:label="@string/title_crear_cuenta"
             android:parentActivityName=".LoginActivity">
@@ -35,7 +36,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LoginActivity" />
         </activity>
-
     </application>
 
 </manifest>
