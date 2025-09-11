@@ -8,6 +8,9 @@
 
     </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.Material3.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.Material3.Light"/>
+
     <!-- se tuvo que hacer este paso porque desaparece el hint al precionarlo en mi editext ,porque agarra del color primario-->
     <style name="editTextBlack" parent="Theme.Material3.Light">
         <item name="android:textSize">@dimen/editText_textSize</item>

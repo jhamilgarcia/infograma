@@ -10,4 +10,5 @@
     <string name="usuario">usuario\n</string>
     <string name="confirmar_contrasen_a">confirme contraseña</string>
     <string name="unir">ÚNETE</string>
+    <string name="title_crear_cuenta">crear cuenta</string>
 </resources>
