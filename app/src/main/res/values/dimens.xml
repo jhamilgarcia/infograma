@@ -13,5 +13,6 @@
     <dimen name="padding_cardview">10dp</dimen>
     <dimen name="paddingBotton_container">10dp</dimen>
     <dimen name="height_botton_navigation_view">70dp</dimen>
-    <dimen name="margin_fab">30dp</dimen>
+    <dimen name="margin_fab">70dp</dimen>
+    <dimen name="padding_card">10dp</dimen>
 </resources>
