@@ -101,20 +101,22 @@ public class homeFragment extends Fragment {
     //creamos la lista de imagenes
     public ArrayList<Image>buidImages(){
         ArrayList<Image>images= new ArrayList<>();
-        images.add(new Image("","carlos valdivia","2 dias","1 me gusta"));
-        images.add(new Image("","luis perez","3 dias","2 me gusta"));
-        images.add(new Image("","fernando torrico","4 dias","3 me gusta"));
-        images.add(new Image("","maria flores","5 dias","4 me gusta"));
-        images.add(new Image("","rolando morales","6 dias","5 me gusta"));
-        images.add(new Image("","wilian jaimes","7 dias","6 me gusta"));
-        images.add(new Image("","roberto paniagua","8 dias","7 me gusta"));
-        images.add(new Image("","lorenas herreras","9 dias","8 me gusta"));
-        images.add(new Image("","laura caceres","10 dias","9 me gusta"));
-        images.add(new Image("","marcelo rojas","11 dias","10 me gusta"));
-        images.add(new Image("","jaime paz","12 dias","11 me gusta"));
+        images.add(new Image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_Ou9KUNe5H212FMa4n4ZiM7yjIwbCHjvcuUkd8BBpstZne3B8um63AsU9VRdfKSsB2Q&usqp=CAU","carlos valdivia","2 dias","1 me gusta"));
+        images.add(new Image("https://lp-cms-production.imgix.net/2019-06/GettyImages-547005343_super.jpg?w=1920&h=640&fit=crop&crop=faces%2Cedges&auto=format&q=75","luis perez","3 dias","2 me gusta"));
+        images.add(new Image("https://lh4.googleusercontent.com/proxy/VCFADWEwXnGhDTOEQBXaWFsUNkC8YknCoH5aF6nL8VKAqdg6NEkQTdL-E1RFHsUPGkJ2MZH7MUrlQlMspiis9tNKbuz7Pa6u","fernando torrico","4 dias","3 me gusta"));
+        images.add(new Image("https://cronicoviajero.com/wp-content/uploads/Chualluma-La-Paz-1.jpg","maria flores","5 dias","4 me gusta"));
+        images.add(new Image("https://www.civitatis.com/f/bolivia/santa-cruz-de-la-sierra/excursion-fuerte-samaipata-589x392.jpg","rolando morales","6 dias","5 me gusta"));
+        images.add(new Image("https://whc.unesco.org/uploads/thumbs/site_0567_0013-1200-630-20151104160951.jpg","wilian jaimes","7 dias","6 me gusta"));
+        images.add(new Image("https://www.opinion.com.bo/media/opinion/images/2024/08/01/2024080122463579837.jpg","roberto paniagua","8 dias","7 me gusta"));
+        images.add(new Image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Virgen_del_socavon_1.jpg/1280px-Virgen_del_socavon_1.jpg","lorenas herreras","9 dias","8 me gusta"));
+        images.add(new Image("https://i.blogs.es/7931b7/2972495051_fb84d3062e_z/650_1200.jpg","laura caceres","10 dias","9 me gusta"));
+        images.add(new Image("https://leadingperutravel.com/wp-content/uploads/The-Singular-Beauty-of-Laguna-Colorada-1.webp","marcelo rojas","11 dias","10 me gusta"));
+        images.add(new Image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_wSmZmHvRm-z90G-wsfBP5nnNnpc-kvZCQ&s","jaime paz","12 dias","11 me gusta"));
 
 
 
         return images;
     }
+
+
 }
