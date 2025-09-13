@@ -3,7 +3,10 @@ package com.example.infogram.adapter;
 import static androidx.core.content.ContextCompat.startActivity;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
+import android.transition.Explode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityOptionsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.infogram.R;
@@ -52,11 +56,22 @@ public class cardViewAdapter extends RecyclerView.Adapter<cardViewAdapter.cardVi
         holder.userNameCardView.setText(image.getUserName());
         holder.cantidadDias.setText(image.getCantidadDias());
         holder.cantidadMeGusta.setText(image.getCantidadMeGusta());
+
         // onclick listener
         holder.imagesCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                activity.startActivity(new Intent(activity, imageDetailActivity.class));
+                if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
+                    Explode explode =new Explode();
+                    explode.setDuration(1000);
+                    activity.getWindow().setExitTransition(explode);
+
+                    activity.startActivity(new Intent(activity, imageDetailActivity.class), ActivityOptionsCompat.makeSceneTransitionAnimation(activity,v,activity.getString(R.string.transisionName_image_cardView)).toBundle());
+                }else{
+                    activity.startActivity(new Intent(activity, imageDetailActivity.class));
+                }
+
+
             }
         });
 

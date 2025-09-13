@@ -16,7 +16,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/uyuni" />
+            android:src="@drawable/uyuni"
+            android:transitionName="@string/transisionName_image_cardView"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
