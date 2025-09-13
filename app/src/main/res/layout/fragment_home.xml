@@ -7,33 +7,30 @@
     tools:context=".view.fractmen.homeFragment">
 
     <include layout="@layout/appbar_toolbar" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-        android:paddingTop="@dimen/padding_card"
         android:paddingLeft="@dimen/padding_card"
-        android:paddingRight="@dimen/padding_card">
+        android:paddingTop="@dimen/padding_card"
+        android:paddingRight="@dimen/padding_card"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
     </androidx.recyclerview.widget.RecyclerView>
 
-
-
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginBottom="@dimen/margin_fab"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/plus"
-            app:backgroundTint="@color/colorAccent"
-            android:tint="@color/white"
-            app:rippleColor="@color/white"
-            android:contentDescription="@null"
-            android:importantForAccessibility="no"
-        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="@dimen/margin_fab"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        android:src="@drawable/plus"
+        android:tint="@color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:rippleColor="@color/white" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
